@@ -24,13 +24,14 @@ public class AppTest
     public void test1(){
 
         newPage.startDriver();
-
     }
 
    @Test
     public void test2(){
-        newPage.startDriver();
-        newPage.stopDriver();
+        newPage
+                .startDriver()
+                .stopDriver();
+
     }
 
 

@@ -10,7 +10,7 @@ public class Page {
 
     private WebDriver driver;
 
-    public void startDriver() {
+    public Page startDriver()   {
 
         String driverPath =  System.getProperty("user.dir");
         System.out.println("Project path : " + driverPath);
@@ -22,11 +22,15 @@ public class Page {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
+        return this;
     }
 
-    public void stopDriver() {
+    public Page stopDriver() {
         driver.close();
         driver.quit();
+
+
+        return this;
     }
 
 
