@@ -21,13 +21,13 @@ public class AppTest
     }
 
     @Test
-    public void test1(){
+    public void testCase001(){
 
         newPage.startDriver();
     }
 
    @Test
-    public void test2(){
+    public void testCase002(){
         newPage
                 .startDriver()
                 .stopDriver();

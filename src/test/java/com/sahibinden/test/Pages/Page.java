@@ -14,7 +14,7 @@ public class Page {
 
         String driverPath =  System.getProperty("user.dir");
         System.out.println("Project path : " + driverPath);
-        System.setProperty("webdriver.chrome.driver", "/Users/optiim/aaengineta/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/optiim/seleniumSahibinden/chromedriver");
 
         driver = new ChromeDriver();
 
