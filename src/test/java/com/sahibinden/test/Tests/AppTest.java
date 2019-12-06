@@ -23,14 +23,32 @@ public class AppTest
     @Test
     public void testCase001(){
 
-        newPage.startDriver();
+        newPage
+                .runChrome();
     }
 
    @Test
     public void testCase002(){
         newPage
-                .startDriver()
+                .runChrome()
                 .stopDriver();
+
+    }
+
+   @Test
+    public void testCase003(){
+        newPage
+                .runChrome()
+                .openPage();
+
+    }
+
+    @Test
+    public void testCase004(){
+        newPage
+                .runChrome()
+                .openPage()
+                .clickLoginButton();
 
     }
 
