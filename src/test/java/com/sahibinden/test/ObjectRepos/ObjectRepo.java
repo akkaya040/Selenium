@@ -6,5 +6,6 @@ public class ObjectRepo {
 
         public static final By buttonLogin = By.cssSelector("a[href='https://secure.sahibinden.com/giris']");
         public static final By xxxx = By.id("xxxx");
+        public static final By adScreen = By.cssSelector("[class='splash-360-home']");
 
 }

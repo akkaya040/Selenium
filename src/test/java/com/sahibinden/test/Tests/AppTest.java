@@ -52,6 +52,16 @@ public class AppTest
 
     }
 
+    @Test
+    public void testCase005(){
+        newPage
+                .runChrome()
+                .openPage()
+                .closeAd()
+                .clickLoginButton();
+
+    }
+
 
 
 

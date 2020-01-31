@@ -1,17 +1,25 @@
 package com.sahibinden.test.Pages;
 
+import com.sahibinden.test.AbstractFunctions;
 import com.sahibinden.test.ObjectRepos.ObjectRepo;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.sahibinden.test.jLogger;
 
+
 import java.util.concurrent.TimeUnit;
 
-public class Page {
+public class Page extends AbstractFunctions{
 
     private WebDriver driver;
+    private AbstractFunctions af = new AbstractFunctions();
 
     public Page runChrome()   {
 
@@ -68,6 +76,14 @@ public class Page {
         // }
 
         driver.findElement(ObjectRepo.buttonLogin).click();
+
+        return this;
+    }
+
+    public Page closeAd() {
+        WebElement element = (new WebDriverWait(driver, 10))
+                .until(ExpectedConditions.elementToBeClickable(ObjectRepo.adScreen));
+        element.click();;
 
         return this;
     }
