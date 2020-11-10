@@ -25,7 +25,7 @@ public class Page extends AbstractFunctions{
 
         String driverPath =  System.getProperty("user.dir");
         System.out.println("Project path : " + driverPath);
-        System.setProperty("webdriver.chrome.driver", "/Users/optiim/seleniumSahibinden/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/akkaya/Projects/Selenium/chromedriver86");
 
         driver = new ChromeDriver();
 
